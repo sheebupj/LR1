@@ -1,0 +1,158 @@
+Internal logging successfully configured to commons logger: true
+Configuring Proxy. Proxy Host: proxy.houston.hpecorp.net Proxy Port: 8080
+Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@3427b02d: Unable to load Client Side Monitoring configurations from environment variables!
+Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@647e447: Unable to load Client Side Monitoring configurations from system properties variables!
+Closing connections idle longer than 60000 MILLISECONDS
+Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@41fbdac4: The 'default' profile does not define all the required properties!
+Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+Sending Request: POST https://sqs.us-east-1.amazonaws.com / Parameters: ({"Action":["GetQueueUrl"],"Version":["2012-11-05"],"QueueName":["sqs-company-prod-HPE"]}Headers: (amz-sdk-invocation-id: d8e7a336-7478-2a40-476b-58927991aa98, User-Agent: aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation, ) 
+AWS4 Canonical Request: '"POST
+/
+
+amz-sdk-invocation-id:d8e7a336-7478-2a40-476b-58927991aa98
+amz-sdk-retry:0/0/500
+host:sqs.us-east-1.amazonaws.com
+user-agent:aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation
+x-amz-date:20200311T095413Z
+
+amz-sdk-invocation-id;amz-sdk-retry;host;user-agent;x-amz-date
+b0b1e02971ac9b9adc8766bf35dd99ed691a3cbcd0358e5cfbd8ca1e0c786f12"
+AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20200311T095413Z
+20200311/us-east-1/sqs/aws4_request
+2f153ea12a4049614ecfe65404a077e0e72105f3513d0821a221976b071df1dd"
+Generating a new signing key as the signing key not available in the cache for the date 1583884800000
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+Connection leased: [id: 0][route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+Opening connection {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443
+Connecting to proxy.houston.hpecorp.net/16.85.88.10:8080
+Connection established 16.168.193.174:64852<->16.85.88.10:8080
+http-outgoing-0 >> CONNECT sqs.us-east-1.amazonaws.com:443 HTTP/1.1
+http-outgoing-0 >> Host: sqs.us-east-1.amazonaws.com
+http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_231)
+http-outgoing-0 >> "CONNECT sqs.us-east-1.amazonaws.com:443 HTTP/1.1[\r][\n]"
+http-outgoing-0 >> "Host: sqs.us-east-1.amazonaws.com[\r][\n]"
+http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_231)[\r][\n]"
+http-outgoing-0 >> "[\r][\n]"
+http-outgoing-0 << "HTTP/1.1 200 Connection established[\r][\n]"
+http-outgoing-0 << "[\r][\n]"
+http-outgoing-0 << HTTP/1.1 200 Connection established
+Tunnel to target created.
+Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+socket.getSupportedProtocols(): [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2], socket.getEnabledProtocols(): [TLSv1, TLSv1.1, TLSv1.2]
+TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+Starting handshake
+Secure session established
+ negotiated protocol: TLSv1.2
+ negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+ peer principal: CN=queue.amazonaws.com
+ peer alternative names: [sqs.us-east-1.amazonaws.com, queue.amazonaws.com, *.sqs.us-east-1.vpce.amazonaws.com]
+ issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+http-outgoing-0: set socket timeout to 50000
+Executing request POST / HTTP/1.1
+http-outgoing-0 >> POST / HTTP/1.1
+http-outgoing-0 >> Host: sqs.us-east-1.amazonaws.com
+http-outgoing-0 >> amz-sdk-invocation-id: d8e7a336-7478-2a40-476b-58927991aa98
+http-outgoing-0 >> amz-sdk-retry: 0/0/500
+http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIA3IRNOTLLQANQKTWQ/20200311/us-east-1/sqs/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;host;user-agent;x-amz-date, Signature=fe1832610fefaf63d3e844cc587f51379683d6d7113de7e730cdbb558a0efb09
+http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation
+http-outgoing-0 >> X-Amz-Date: 20200311T095413Z
+http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=utf-8
+http-outgoing-0 >> Content-Length: 68
+http-outgoing-0 >> Connection: Keep-Alive
+http-outgoing-0 >> "POST / HTTP/1.1[\r][\n]"
+http-outgoing-0 >> "Host: sqs.us-east-1.amazonaws.com[\r][\n]"
+http-outgoing-0 >> "amz-sdk-invocation-id: d8e7a336-7478-2a40-476b-58927991aa98[\r][\n]"
+http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIA3IRNOTLLQANQKTWQ/20200311/us-east-1/sqs/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;host;user-agent;x-amz-date, Signature=fe1832610fefaf63d3e844cc587f51379683d6d7113de7e730cdbb558a0efb09[\r][\n]"
+http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation[\r][\n]"
+http-outgoing-0 >> "X-Amz-Date: 20200311T095413Z[\r][\n]"
+http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=utf-8[\r][\n]"
+http-outgoing-0 >> "Content-Length: 68[\r][\n]"
+http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-0 >> "[\r][\n]"
+http-outgoing-0 >> "Action=GetQueueUrl&Version=2012-11-05&QueueName=sqs-company-prod-HPE"
+http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+http-outgoing-0 << "x-amzn-RequestId: 497d49c5-b05a-5657-ba2c-1f2707dd8a30[\r][\n]"
+http-outgoing-0 << "Date: Wed, 11 Mar 2020 09:54:15 GMT[\r][\n]"
+http-outgoing-0 << "Content-Type: text/xml[\r][\n]"
+http-outgoing-0 << "Content-Length: 340[\r][\n]"
+http-outgoing-0 << "[\r][\n]"
+http-outgoing-0 << HTTP/1.1 200 OK
+http-outgoing-0 << x-amzn-RequestId: 497d49c5-b05a-5657-ba2c-1f2707dd8a30
+http-outgoing-0 << Date: Wed, 11 Mar 2020 09:54:15 GMT
+http-outgoing-0 << Content-Type: text/xml
+http-outgoing-0 << Content-Length: 340
+Connection can be kept alive for 60000 MILLISECONDS
+http-outgoing-0 << "<?xml version="1.0"?><GetQueueUrlResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueUrlResult><QueueUrl>https://sqs.us-east-1.amazonaws.com/774263184087/sqs-company-prod-HPE</QueueUrl></GetQueueUrlResult><ResponseMetadata><RequestId>497d49c5-b05a-5657-ba2c-1f2707dd8a30</RequestId></ResponseMetadata></GetQueueUrlResponse>"
+Connection [id: 0][route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443] can be kept alive for 60.0 seconds
+http-outgoing-0: set socket timeout to 0
+Connection released: [id: 0][route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+Received successful response: 200, AWS Request ID: 497d49c5-b05a-5657-ba2c-1f2707dd8a30
+x-amzn-RequestId: 497d49c5-b05a-5657-ba2c-1f2707dd8a30
+Sending Request: POST https://sqs.us-east-1.amazonaws.com /774263184087/sqs-company-prod-HPE Parameters: ({"Action":["GetQueueAttributes"],"Version":["2012-11-05"],"AttributeName.1":["ApproximateNumberOfMessages"]}Headers: (amz-sdk-invocation-id: eddd9073-acaa-878e-d217-260a9df46ccc, User-Agent: aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation, ) 
+AWS4 Canonical Request: '"POST
+/774263184087/sqs-company-prod-HPE
+
+amz-sdk-invocation-id:eddd9073-acaa-878e-d217-260a9df46ccc
+amz-sdk-retry:0/0/500
+host:sqs.us-east-1.amazonaws.com
+user-agent:aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation
+x-amz-date:20200311T095415Z
+
+amz-sdk-invocation-id;amz-sdk-retry;host;user-agent;x-amz-date
+9eefc4c7d84715cd84ed076c77d3a7fadfa401c58174f2a8daf12ddc2e90ec9a"
+AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20200311T095415Z
+20200311/us-east-1/sqs/aws4_request
+28dff385cf8e3e6b6680c37e4b966c58ac0a44ba8fc2511e303942811437e3bc"
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+Connection leased: [id: 0][route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+http-outgoing-0: set socket timeout to 50000
+http-outgoing-0: set socket timeout to 50000
+Executing request POST /774263184087/sqs-company-prod-HPE HTTP/1.1
+http-outgoing-0 >> POST /774263184087/sqs-company-prod-HPE HTTP/1.1
+http-outgoing-0 >> Host: sqs.us-east-1.amazonaws.com
+http-outgoing-0 >> amz-sdk-invocation-id: eddd9073-acaa-878e-d217-260a9df46ccc
+http-outgoing-0 >> amz-sdk-retry: 0/0/500
+http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=AKIA3IRNOTLLQANQKTWQ/20200311/us-east-1/sqs/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;host;user-agent;x-amz-date, Signature=36e4bae65efa5ac91430fcec60e6a9ad1706807756fb41804990fdcc7a57171f
+http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation
+http-outgoing-0 >> X-Amz-Date: 20200311T095415Z
+http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=utf-8
+http-outgoing-0 >> Content-Length: 88
+http-outgoing-0 >> Connection: Keep-Alive
+http-outgoing-0 >> "POST /774263184087/sqs-company-prod-HPE HTTP/1.1[\r][\n]"
+http-outgoing-0 >> "Host: sqs.us-east-1.amazonaws.com[\r][\n]"
+http-outgoing-0 >> "amz-sdk-invocation-id: eddd9073-acaa-878e-d217-260a9df46ccc[\r][\n]"
+http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=AKIA3IRNOTLLQANQKTWQ/20200311/us-east-1/sqs/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;host;user-agent;x-amz-date, Signature=36e4bae65efa5ac91430fcec60e6a9ad1706807756fb41804990fdcc7a57171f[\r][\n]"
+http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.726 Windows_10/10.0 Java_HotSpot(TM)_64-Bit_Server_VM/25.231-b11 java/1.8.0_231 vendor/Oracle_Corporation[\r][\n]"
+http-outgoing-0 >> "X-Amz-Date: 20200311T095415Z[\r][\n]"
+http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=utf-8[\r][\n]"
+http-outgoing-0 >> "Content-Length: 88[\r][\n]"
+http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-0 >> "[\r][\n]"
+http-outgoing-0 >> "Action=GetQueueAttributes&Version=2012-11-05&AttributeName.1=ApproximateNumberOfMessages"
+http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+http-outgoing-0 << "x-amzn-RequestId: 8ea78236-4bbc-5b17-9614-d4d4fc342770[\r][\n]"
+http-outgoing-0 << "Date: Wed, 11 Mar 2020 09:54:16 GMT[\r][\n]"
+http-outgoing-0 << "Content-Type: text/xml[\r][\n]"
+http-outgoing-0 << "Content-Length: 358[\r][\n]"
+http-outgoing-0 << "[\r][\n]"
+http-outgoing-0 << HTTP/1.1 200 OK
+http-outgoing-0 << x-amzn-RequestId: 8ea78236-4bbc-5b17-9614-d4d4fc342770
+http-outgoing-0 << Date: Wed, 11 Mar 2020 09:54:16 GMT
+http-outgoing-0 << Content-Type: text/xml
+http-outgoing-0 << Content-Length: 358
+Connection can be kept alive for 60000 MILLISECONDS
+http-outgoing-0 << "<?xml version="1.0"?><GetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><GetQueueAttributesResult><Attribute><Name>ApproximateNumberOfMessages</Name><Value>23</Value></Attribute></GetQueueAttributesResult><ResponseMetadata><RequestId>8ea78236-4bbc-5b17-9614-d4d4fc342770</RequestId></ResponseMetadata></GetQueueAttributesResponse>"
+Connection [id: 0][route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443] can be kept alive for 60.0 seconds
+http-outgoing-0: set socket timeout to 0
+Connection released: [id: 0][route: {tls}->http://proxy.houston.hpecorp.net:8080->https://sqs.us-east-1.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+Received successful response: 200, AWS Request ID: 8ea78236-4bbc-5b17-9614-d4d4fc342770
+x-amzn-RequestId: 8ea78236-4bbc-5b17-9614-d4d4fc342770
